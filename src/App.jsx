@@ -1,6 +1,6 @@
 import React from "react"
 import {  Route, Routes, HashRouter } from "react-router-dom"
-import {BrowserRouter}  from "react-router-dom"
+// import {BrowserRouter}  from "react-router-dom"
 import HomePage from "./pages/HomePage"
 import Login from "./pages/Login"
 import Layout from "./pages/Layout"
@@ -13,7 +13,7 @@ import ProtectedRoute from "./pages/ProtectedRoute"
 function App() {
   return (
     // <BrowserRouter>
-   
+   // use hash router instead of browser router because in ghpages it does not work properly
     <HashRouter>
       <AuthProvider>
         <CartProvider>
