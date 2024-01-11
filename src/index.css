@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+  /* Example */
+@media (max-width: 340px) {
+    #root{
+      width: 340px;
+    }
+    /* Adjust other elements as needed */
+  }
+  

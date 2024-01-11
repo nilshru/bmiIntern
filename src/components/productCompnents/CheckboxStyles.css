@@ -1,0 +1,74 @@
+/* Add this updated CSS to your CheckboxStyles.css */
+
+.checkbox-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    font-family: Arial, sans-serif;
+  }
+
+  .checkbox-container div {
+    margin-right: 10px;
+    margin-bottom: 5px; /* Add space between Filter text and checkboxes */
+  }
+
+  .checkbox-container label {
+    margin-right: 20px;
+    margin-bottom: 5px; /* Add space between checkboxes */
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .checkbox-container input[type="checkbox"] {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #333;
+    border-radius: 4px;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  .checkbox-container input[type="checkbox"]:checked {
+    background-color: #333;
+  }
+
+  .checkbox-container input[type="checkbox"]:checked::before {
+    content: '✔';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+  }
+
+  /* Add or modify this in your CheckboxStyles.css */
+
+/* Styling for the scrollbar track */
+/* .checkbox-container .dropdown {
+    max-height: auto;
+    overflow-y: auto;
+  } */
+
+  .checkbox-container .mainscroll::-webkit-scrollbar {
+    width: 5px; /* Width of the scrollbar */
+    height: 5px; /* Height of the scrollbar */
+  }
+
+  /* Styling for the scrollbar thumb */
+  .checkbox-container .mainscroll::-webkit-scrollbar-thumb {
+    background-color: #f8b02a; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the scrollbar thumb */
+  }
+
+
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .checkbox-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
